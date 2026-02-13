@@ -1,0 +1,79 @@
+/* 1. Global Reset & Centering the Game */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  background-color: #23272f; /* Deep dark gray background */
+  color: #f6f7f9;
+  
+  /* Center everything on screen */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* 2. The Game Status Text */
+.status {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: center;
+  color: #e6e6e6;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* 3. The Rows */
+.R {
+  display: flex;
+  justify-content: center;
+  gap: 8px; /* Creates space between columns */
+  margin-bottom: 8px; /* Creates space between rows */
+}
+
+/* 4. The Squares (Buttons) */
+.square {
+  width: 80px;
+  height: 80px;
+  background-color: #343a46; /* Slightly lighter than body */
+  border: none;
+  border-radius: 12px; /* Soft rounded corners */
+  
+  font-size: 3rem;
+  font-weight: bold;
+  color: #58c4dc; /* React-style blue for text */
+  
+  cursor: pointer;
+  transition: all 0.2s ease; /* Smooth hover effects */
+  box-shadow: 0 4px 0 rgba(0,0,0,0.2); /* Subtle 3D depth */
+  
+  /* Flex center the X and O inside the square */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Hover Effect */
+.square:hover {
+  background-color: #404859;
+  transform: translateY(-2px); /* Slight lift */
+  box-shadow: 0 6px 0 rgba(0,0,0,0.25);
+}
+
+/* Active (Click) Effect */
+.square:active {
+  transform: translateY(2px); /* Push down */
+  box-shadow: 0 1px 0 rgba(0,0,0,0.2);
+}
+
+h1 {
+  position: absolute;
+  top: 20%;
+  font-size: 2.5rem;
+  color: #58c4dc; /* Same React-style blue for the title */
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5); /* Subtle shadow for depth */
+}
+
+/* Optional: Different color for 'O' if you want to get fancy later
+   (This styling applies to all, but looks great for both) */
