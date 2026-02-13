@@ -2,6 +2,8 @@
 
 > **A classic game built to master the fundamentals of React.js.**
 
+<img width="388" height="428" alt="image" src="https://github.com/user-attachments/assets/3e2540ae-74c7-45ed-9da1-b6fbe22f7d6b" />
+
 ## 👋 About The Project
 This isn't just a game of Tic-Tac-Toe; it's my first step into the React ecosystem. I built this project to understand the core philosophy of React: thinking in components, managing state, and handling user interaction without touching the DOM directly.
 
